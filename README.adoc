@@ -45,10 +45,10 @@ cd /var/lib/mysql
 --
 
 [start=3]
-3. Run `insert_northwind.sh` script to import all data
+3. Run `load_data.sh` script to import all data
 [source,bash]
 --
-./insert_northwind.sh
+./load_data.sh
 --
 
 [start=4]
@@ -57,7 +57,7 @@ cd /var/lib/mysql
 --
 mysql -uroot -pTesting123
 
-MariaDB [(none)]> use northwind
+MariaDB [(none)]> use coffee_shop;
 MariaDB [(none)]> show tables;
 MariaDB [(none)]> SELECT * FROM <table> LIMIT 10;
 --
@@ -86,10 +86,10 @@ cd import
 --
 
 [start=3]
-3. Run `insert_northwind.sh` script to import all data
+3. Run `load_data.sh` script to import all data
 [source,bash]
 --
-./insert_northwind.sh
+./load_data.sh
 --
 
 [start=4]

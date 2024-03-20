@@ -2,11 +2,11 @@
 //6,646 nodes
 //68,039 relationships
 
-CREATE CONSTRAINT FOR (p:Product) REQUIRE p.productId IS UNIQUE;
-CREATE CONSTRAINT FOR (c:Customer) REQUIRE c.customerId IS UNIQUE;
-CREATE CONSTRAINT FOR (b:Building) REQUIRE b.buildingId IS UNIQUE;
-CREATE CONSTRAINT FOR (s:Staff) REQUIRE s.staffId IS UNIQUE;
-CREATE CONSTRAINT FOR (o:Order) REQUIRE (o.orderId, o.orderDate, o.orderTime) IS NODE KEY;
+CREATE CONSTRAINT product IF NOT EXISTS FOR (p:Product) REQUIRE p.productId IS UNIQUE;
+CREATE CONSTRAINT customer IF NOT EXISTS FOR (c:Customer) REQUIRE c.customerId IS UNIQUE;
+CREATE CONSTRAINT building IF NOT EXISTS FOR (b:Building) REQUIRE b.buildingId IS UNIQUE;
+CREATE CONSTRAINT staff IF NOT EXISTS FOR (s:Staff) REQUIRE s.staffId IS UNIQUE;
+CREATE CONSTRAINT order IF NOT EXISTS FOR (o:Order) REQUIRE o.orderId IS UNIQUE;
 
 //Load products, types, categories, groups
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/JMHReif/graph-demo-datasets/main/coffee-shop/product.csv" AS row
@@ -97,8 +97,8 @@ RETURN count(s);
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/JMHReif/graph-demo-datasets/main/coffee-shop/sales_receipts.csv" AS row
 CALL {
     WITH row
-    MERGE (o:Order {orderId: toInteger(row.transaction_id), orderDate: date(row.transaction_date), orderTime: localtime(row.transaction_time)})
-    ON CREATE SET o.inStore = row.instore_yn
+    MERGE (o:Order {transactionId: toInteger(row.transaction_id), transactionDate: date(row.transaction_date), transactionTime: localtime(row.transaction_time)})
+    ON CREATE SET o.orderId = randomUUID(), o.inStore = row.instore_yn
     WITH row, o
     CALL {
         WITH row, o
