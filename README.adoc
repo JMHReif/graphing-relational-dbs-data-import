@@ -15,12 +15,15 @@ In this project, we will see how to translate part of all data from a relational
 Each database is spun up using a Docker container. The linked custom images use the official image of each database as the base, then add necessary tools and expose ports preferred for each.
 
 Instructions for getting each container up and running are included in the related repository.
+
 * https://github.com/JMHReif/docker-maria[MariaDB container repository^]
 * https://github.com/JMHReif/docker-neo4j[Neo4j container repository^]
 
 == Data load
 
-That's what this repository is for! To accomplish this piece, you will need to copy each of the csv files and scripts to the local directory that corresponds to the data directory defined in the Docker run script for each database.
+The data set is sourced from a https://www.kaggle.com/datasets/ylchang/coffee-shop-sample-data-1113[Kaggle repository^], but it has been cleaned up a lot. Cleaned files are available in this repository under the `/data` directory.
+
+To accomplish loading the data, you will need to copy each of the csv files and scripts to the local directory that corresponds to the data directory defined in the Docker run script for each database.
 
 For instance, I'll need to put the csv files and both scripts for Neo4j in the same directory as specified in this line of the Dockerfile for my Neo4j container.
 
