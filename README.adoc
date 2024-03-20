@@ -1,0 +1,126 @@
+= Data Import for Graphing Relational Databases project
+
+This is the repository for data loading that accompanies the Graphing Relational Databases project with Neo4j (graph database) and MariaDB (relational database). All necessary pieces to replicate the project are linked below.
+
+== Project background
+
+In this project, we will see how to translate part of all data from a relational format into a graph. Goals of this project include the following:
+
+1. Learn the basics of migrating the model and practical steps for actually implementing it.
+2. Understand naming and case conventions when migrating from tables to graphs, as well as some principles for a successful graph model.
+3. Get concrete steps for graphing relational databases.
+
+== Docker containers
+
+Each database is spun up using a Docker container. The linked custom images use the official image of each database as the base, then add necessary tools and expose ports preferred for each.
+
+Instructions for getting each container up and running are included in the related repository.
+* https://github.com/JMHReif/docker-maria[MariaDB container repository^]
+* https://github.com/JMHReif/docker-neo4j[Neo4j container repository^]
+
+== Data load
+
+That's what this repository is for! To accomplish this piece, you will need to copy each of the csv files and scripts to the local directory that corresponds to the data directory defined in the Docker run script for each database.
+
+For instance, I'll need to put the csv files and both scripts for Neo4j in the same directory as specified in this line of the Dockerfile for my Neo4j container.
+
+Next, we need to follow the steps outlined below for each data load.
+
+=== MariaDB
+
+1. SSH into container
+[source,bash]
+--
+docker exec -it mymaria bash
+--
+
+[start=2]
+2. Change to expected directory (/var/lib/mysql)
+[source,bash]
+--
+cd /var/lib/mysql
+--
+
+[start=3]
+3. Run `insert_northwind.sh` script to import all data
+[source,bash]
+--
+./insert_northwind.sh
+--
+
+[start=4]
+4. Verify data (replace `<table>` with any table name)
+[source,bash]
+--
+mysql -uroot -pTesting123
+
+MariaDB [(none)]> use northwind
+MariaDB [(none)]> show tables;
+MariaDB [(none)]> SELECT * FROM <table> LIMIT 10;
+--
+
+[start=5]
+5. Exit both mysql shell and Docker container shell
+[source,bash]
+--
+exit
+exit
+--
+
+=== Neo4j
+
+1. SSH into container
+[source,bash]
+--
+docker exec -it myneo4j bash
+--
+
+[start=2]
+2. Change to expected directory
+[source,bash]
+--
+cd import
+--
+
+[start=3]
+3. Run `insert_northwind.sh` script to import all data
+[source,bash]
+--
+./insert_northwind.sh
+--
+
+[start=4]
+4. Verify data
+[source,bash]
+--
+cypher-shell -u neo4j -p Testing123
+
+neo4j> MATCH (c:Customer) RETURN c LIMIT 10;
+neo4j> MATCH (n)-[rel]-(other) RETURN * LIMIT 10;
+--
+
+[start=5]
+5. Exit both cypher shell and Docker container shell
+[source,bash]
+--
+:exit
+exit
+--
+
+== Issues
+
+*NOTE:* If this project has been run before on an older version, then when you create the updated container, I recommend cleaning out any data store files in the `/data` directory for each database.
+
+I.e. for MariaDB, anything that is not a `.csv`, `.sql`, or `.sh`, including database instance directories like mysql, sys, etc.
+
+For Neo4j, you can remove the transactions, databases, and dbms folders. (All the csv files are safe in the `/import` directory)
+
+== Presentations
+
+PDF version of accompanying presentation is published to SpeakerDeck.
+
+_Coming soon!_
+
+== Related projects
+
+_Coming soon!_

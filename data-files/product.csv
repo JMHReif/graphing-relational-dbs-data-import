@@ -1,0 +1,89 @@
+product_id,product,product_description,unit_of_measure,current_wholesale_price,current_retail_price,tax_exempt_yn,promo_yn,new_product_yn,type_id
+1,Brazilian - Organic,It's like Carnival in a cup. Clean and smooth.,12 oz,14.4,18.0,Y,N,N,1
+2,Our Old Time Diner Blend,Out packed blend of beans that is reminiscent of the cup of coffee you used to get at a diner. ,12 oz,14.4,18.0,Y,N,N,2
+3,Espresso Roast,Our house blend for a good espresso shot.,1 lb,11.8,14.75,Y,N,N,3
+4,Primo Espresso Roast,Our primium single source of hand roasted beans.,1 lb,16.36,20.45,Y,N,N,3
+5,Columbian Medium Roast,A smooth cup of coffee any time of day. ,1 lb,12.0,15.0,Y,N,N,4
+6,Ethiopia,From the home of coffee.,1 lb,16.8,21.0,Y,N,N,4
+7,Jamacian Coffee River,"Ya man, it will start your day off right.",1 lb,15.8,19.75,Y,N,N,5
+8,Civet Cat,"The most expensive coffee in the world, the cats do all the work.",.5 lb,36.0,45.0,Y,N,N,5
+9,Organic Decaf Blend,Our blend of hand picked organic beans that have been naturally decaffinated. ,1 lb,18.0,22.5,Y,N,N,1
+10,Guatemalan Sustainably Grown,Green beans you can roast yourself. ,1 lb,8.0,10.0,Y,N,N,6
+11,Lemon Grass,You will think you are Thailand as you sip your cuppa. ,.9 oz,7.16,8.95,Y,N,N,7
+12,Peppermint,Cool and refreshing to help calm your nerves. ,.9 oz,7.16,8.95,Y,N,N,7
+13,English Breakfast,The traditional cup to start your day.,.9 oz,7.16,8.95,Y,N,N,8
+14,Earl Grey,A full leaf of Orange Pekoe blended with organic oil of bergamot.,.9 oz,7.16,8.95,Y,N,N,8
+15,Serenity Green Tea,Mountain grown and harvested at the optimal time. ,1 oz,7.4,9.25,Y,N,N,9
+16,Traditional Blend Chai,A traditional blend.,.9 oz,7.16,8.95,Y,N,N,10
+17,Morning Sunrise Chai,Fair trade and organic and has a warm finish. ,.9 oz,7.6,9.5,Y,N,N,10
+18,Spicy Eye Opener Chai,A spicier blend to awaken your taste buds.,.9 oz,8.76,10.95,Y,N,N,10
+19,Dark chocolate,This drinking chocolate is smooth and creamy.,1 lb,5.12,6.4,Y,N,N,11
+20,Sustainably Grown Organic,Certified organic containing the highest quality ingredients. ,1 lb,6.08,7.6,Y,N,N,12
+21,Chili Mayan,"Fragrant with spices, this is the most flavourful drinking chocolate you will find.",1 lb,10.66,13.33,Y,N,N,11
+22,Our Old Time Diner Blend Sm,An honest cup a coffee.,8 oz,0.4,2.0,Y,N,N,13
+23,Our Old Time Diner Blend Rg,An honest cup a coffee.,16 oz,0.5,2.5,Y,N,N,13
+24,Our Old Time Diner Blend Lg,An honest cup a coffee.,24 oz,0.6,3.0,Y,N,N,13
+25,Brazilian Sm,It's like Carnival in a cup. Clean and smooth.,8 oz,0.44,2.2,Y,N,N,14
+26,Brazilian Rg,It's like Carnival in a cup. Clean and smooth.,16 oz,0.6,3.0,Y,N,N,14
+27,Brazilian Lg,It's like Carnival in a cup. Clean and smooth.,24 oz,0.7,3.5,Y,N,N,14
+28,Columbian Medium Roast Sm,A smooth cup of coffee any time of day. ,8 oz,0.4,2.0,Y,N,N,15
+29,Columbian Medium Roast Rg,A smooth cup of coffee any time of day. ,16 oz,0.5,2.5,Y,N,N,15
+30,Columbian Medium Roast Lg,A smooth cup of coffee any time of day. ,24 oz,0.6,3.0,Y,N,N,15
+31,Ethiopia Sm,A bold cup when you want that something extra.,8 oz,0.44,2.2,Y,N,N,15
+32,Ethiopia Rg,A bold cup when you want that something extra.,16 oz,0.6,3.0,Y,N,N,15
+33,Ethiopia Lg,A bold cup when you want that something extra.,24 oz,0.7,3.5,Y,N,N,15
+34,Jamaican Coffee River Sm,Still a front runner for good premium coffee. ,8 oz,0.49,2.45,Y,N,N,16
+35,Jamaican Coffee River Rg,Still a front runner for good premium coffee. ,16 oz,0.62,3.1,Y,N,N,16
+36,Jamaican Coffee River Lg,Still a front runner for good premium coffee. ,24 oz,0.75,3.75,Y,N,N,16
+37,Espresso shot,You will think you are in Venice when you sip this one. ,1.5 oz,0.6,3.0,Y,N,N,17
+38,Latte,You will think you are in Venice when you sip this one. ,1.5 oz,0.75,3.75,Y,N,N,17
+39,Latte Rg,You will think you are in Venice when you sip this one. ,3.0 oz,0.85,4.25,Y,N,N,17
+40,Cappuccino,You will think you are in Venice when you sip this one. ,1.5 oz,0.75,3.75,Y,N,N,17
+41,Cappuccino Lg,You will think you are in Venice when you sip this one. ,3.0 oz,0.85,4.25,Y,N,N,17
+42,Lemon Grass Rg,You will think you are in Thailand. ,16 oz,0.63,2.5,Y,N,N,18
+43,Lemon Grass Lg,You will think you are in Thailand. ,24 oz,0.75,3.0,Y,N,N,18
+44,Peppermint Rg,A cool and refreshing cup.,16 oz,0.63,2.5,Y,N,N,18
+45,Peppermint Lg,A cool and refreshing cup.,24 oz,0.75,3.0,Y,N,N,18
+46,Serenity Green Tea Rg,Feel the stress leaving your body. ,16 oz,0.63,2.5,Y,N,N,19
+47,Serenity Green Tea Lg,Feel the stress leaving your body. ,24 oz,0.75,3.0,Y,N,N,19
+48,English Breakfast Rg,The Queen's favourite cuppa in the morning. ,16 oz,0.63,2.5,Y,N,N,20
+49,English Breakfast Lg,The Queen's favourite cuppa in the morning. ,24 oz,0.75,3.0,Y,N,N,20
+50,Earl Grey Rg,Tradition in a cup.,16 oz,0.63,2.5,Y,N,N,20
+51,Earl Grey Lg,Tradition in a cup.,24 oz,0.75,3.0,Y,N,N,20
+52,Traditional Blend Chai Rg,Sit back and think of the tropical breezes.,16 oz,0.63,2.5,Y,N,N,21
+53,Traditional Blend Chai Lg,Sit back and think of the tropical breezes.,24 oz,0.75,3.0,Y,N,N,21
+54,Morning Sunrise Chai Rg,Face the morning after your yoga routine. ,16 oz,0.63,2.5,Y,N,N,21
+55,Morning Sunrise Chai Lg,Face the morning after your yoga routine. ,24 oz,1.0,4.0,Y,N,N,21
+56,Spicy Eye Opener Chai Rg,When you need your eyes opened wide.,16 oz,0.64,2.55,Y,N,N,21
+57,Spicy Eye Opener Chai Lg,When you need your eyes opened wide.,24 oz,0.78,3.1,Y,N,N,21
+58,Dark chocolate Rg,"Slightly bitter, but still very rich.",12 oz,2.63,3.5,Y,N,N,22
+59,Dark chocolate Lg,"Slightly bitter, but still very rich.",16 oz,3.38,4.5,Y,N,N,22
+60,Sustainably Grown Organic Rg,Just pure notes of spice.,12 oz,2.81,3.75,Y,N,N,22
+61,Sustainably Grown Organic Lg,Just pure notes of spice.,16 oz,3.56,4.75,Y,N,N,22
+62,Snow Day Hot Chocolate,Added marshmallows for the needed sugar rush.,8 oz,2.25,3.0,Y,N,N,22
+63,Carmel syrup,Rich carmel taste,pump,0.04,0.8,Y,N,N,23
+64,Hazelnut syrup,Bursting with nutty flavour,pump,0.04,0.8,Y,N,N,23
+65,Sugar Free Vanilla syrup,Our favorite,pump,0.04,0.8,Y,N,N,24
+66,Pumpkin Spice Latte,"Boo, its that time of year again",1.5 oz,0.99,4.95,Y,N,N,25
+67,Pumpkin Spice Latte Lg,"Boo, its that time of year again",3.0 oz,1.19,5.95,Y,Y,N,25
+68,Happy Holidays hot chocolate,"Candy cane and hot chocolate, perfect.",8 oz,2.81,3.75,Y,Y,Y,25
+69,Hazelnut Biscotti,Crunch!,single,2.28,3.5,N,N,N,28
+70,Cranberry Scone,Like Grandma used to make,single,2.11,3.25,N,N,N,27
+71,Chocolate Croissant,Chocolate flakes,single,2.44,3.75,N,N,N,26
+72,Ginger Scone,Little bit of spice,single,2.11,3.25,N,N,N,27
+73,Almond Croissant,Crunch!,single,2.44,3.75,N,N,N,26
+74,Ginger Biscotti,Crunch!,single,2.28,3.5,N,N,N,28
+75,Croissant,Flakey and buttery,single,2.11,3.25,N,N,N,26
+76,Chocolate Chip Biscotti,Crunch!,single,2.28,3.5,N,N,N,28
+77,Oatmeal Scone,Grannys fav,single,1.95,3.0,N,N,N,27
+78,Scottish Cream Scone ,Old time comfort,single,2.93,4.5,N,N,N,27
+79,Jumbo Savory Scone,"Anytime, anywhere",single,2.44,3.75,N,N,N,27
+80,I Need My Bean! Toque,keep your head bean warm,single,7.36,23.0,N,N,N,29
+81,I Need My Bean! T-shirt,Stylish chic,single,8.96,28.0,N,N,N,29
+82,I Need My Bean! Diner mug,Classic,single,3.84,12.0,N,N,N,30
+83,I Need My Bean! Latte cup,The cup and saucer set is the perfect way to enjoy your latte at home,single,4.48,14.0,N,N,N,30
+84,Chocolate syrup,Bursting with chocolate flavour,pump,0.04,0.8,Y,N,N,23
+85,Rio Nights,2 shots of Ouro Brasilerio and pure cane sugar syrup,6 oz,1.2,6.0,Y,N,Y,31
+87,Ouro Brasileiro shot,From Rio,1.5 oz,0.6,3.0,Y,N,N,17
+88,Ouro Brasileiro shot promo,Ouro promo,16 oz,0.42,2.1,Y,Y,N,17
+89,Ginger Scone promo,Little bit of spice,single,1.72,2.65,N,Y,N,27
