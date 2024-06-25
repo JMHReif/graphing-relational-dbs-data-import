@@ -1,6 +1,6 @@
 //Total loaded data size:
-//6,646 nodes
-//68,039 relationships
+//41,714 nodes
+//150,724 relationships
 
 CREATE CONSTRAINT product IF NOT EXISTS FOR (p:Product) REQUIRE p.productId IS UNIQUE;
 CREATE CONSTRAINT customer IF NOT EXISTS FOR (c:Customer) REQUIRE c.customerId IS UNIQUE;

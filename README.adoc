@@ -118,12 +118,6 @@ I.e. for MariaDB, anything that is not a `.csv`, `.sql`, or `.sh`, including dat
 
 For Neo4j, you can remove the transactions, databases, and dbms folders. (All the csv files are safe in the `/import` directory)
 
-== Presentations
-
-PDF version of accompanying presentation is published to SpeakerDeck.
-
-_Coming soon!_
-
 == Related projects
 
 _Coming soon!_
