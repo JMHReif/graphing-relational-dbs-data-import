@@ -120,4 +120,4 @@ For Neo4j, you can remove the transactions, databases, and dbms folders. (All th
 
 == Related projects
 
-_Coming soon!_
+* Demo queries and session resources: https://github.com/JMHReif/connect-the-tables[connect-the-tables^]
